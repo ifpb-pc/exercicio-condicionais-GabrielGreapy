@@ -16,7 +16,13 @@ def q2():
     2. Verificação de Número Par/Ímpar: Crie um programa que pede ao usuário 
     um número e imprima se ele é par ou ímpar.
     """
-    print("par ")
+    pass
+    n = int(input('Digite um numero'))
+    if (n % 2) == 0:
+        print('par')
+    else:
+        print('ímpar')
+
 
 def q3():
     """
@@ -24,13 +30,34 @@ def q3():
     números e uma operação (+, -, *, /) e imprima o resultado dessa operação.
     """
     pass
+    A = float(input('Escolha um numero:'))
+    B = float(input('Escolha outro numero:'))
+    op = str(input('Escolha uma operação(adç, subt , mult, div)'))
+    if op == 'adç':
+        print(f'{A} + {B} = {float(A + B)}')
+    elif op == 'subt':
+        print(f'{A} - {B} = {float(A - B)}')
+    elif op == 'mult':
+        print(f'{A} * {B} = {float(A * B)}')
+    elif op == 'div' :
+        print(f'{A} / {B} = {float(A / B)}')
+
 
 def q4():
     """
     4. Maior de Três Números: Escreva um programa que solicita três números 
     ao usuário e imprima o maior dentre eles.
     """
-    pass
+    a = int(input('Escolha um numero:'))
+    b = int(input('Escolha outro numero:'))
+    c = int(input('Escolha outro numero:'))
+    if (a > b) and (a > c):
+        print(a)
+    elif (b > a) and (b > c):
+        print(b)
+    else:
+        print(c)
+
 
 def q5():
     """
@@ -38,6 +65,7 @@ def q5():
     em "Criança" (0-12), "Adolescente" (13-19), "Adulto" (20-59) ou "Idoso" (60+).
     """
     pass
+
 
 def q6():
     """
