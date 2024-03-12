@@ -30,30 +30,21 @@ def q3():
     números e uma operação (+, -, *, /) e imprima o resultado dessa operação.
     """
     pass
-    A = float(input('Escolha um numero:'))
-    B = float(input('Escolha outro numero:'))
-    op = str(input('Escolha uma operação(adç, subt , mult, div)'))
-    if op == 'adç':
-        print(f'{A} + {B} = {float(A + B)}')
-    elif op == 'subt':
-        print(f'{A} - {B} = {float(A - B)}')
-    elif op == 'mult':
-        print(f'{A} * {B} = {float(A * B)}')
-    elif op == 'div' :
-        print(f'{A} / {B} = {float(A / B)}')
-
-
+    op = str(input('Escolha uma operação'))
+    a = float(input('Escolha um numero:'))
+    b = float(input('Escolha outro numero:'))
+    
 def q4():
     """
     4. Maior de Três Números: Escreva um programa que solicita três números 
     ao usuário e imprima o maior dentre eles.
     """
-    a = int(input('Escolha um numero:'))
-    b = int(input('Escolha outro numero:'))
-    c = int(input('Escolha outro numero:'))
-    if (a > b) and (a > c):
+    a = float(input('Escolha um numero:'))
+    b = float(input('Escolha outro numero:'))
+    c = float(input('Escolha outro numero:'))
+    if a > b and a > c :
         print(a)
-    elif (b > a) and (b > c):
+    elif b > a and b > c:
         print(b)
     else:
         print(c)
@@ -65,8 +56,16 @@ def q5():
     em "Criança" (0-12), "Adolescente" (13-19), "Adulto" (20-59) ou "Idoso" (60+).
     """
     pass
-
-
+    idade = int(input('idade'))
+    if 0 <= idade <= 12 :
+        print('Criança')
+    elif 12 < idade < 19:
+        print('Adolescente')
+    elif 20 < idade < 59 :
+        print('Adulto')
+    elif 60 < idade :
+        print('Idoso')
+    
 def q6():
     """
     6. Verificação de Triângulo: Peça ao usuário o comprimento de três 
@@ -82,7 +81,19 @@ def q7():
     A (90-100), B (80-89), C (70-79), D (60-69), E (50-59).e F (0-49)
     """
     pass
-
+    nota = int(input('Digite sua idade'))
+    if nota < 49 :
+        print('F')
+    if 59 > nota > 50:
+        print('E')
+    if 60 > nota > 69:
+        print('D')
+    if 70 > nota > 79:
+        print('C')
+    if 80 > nota > 89:
+        print('B')
+    if 90 > nota > 100:
+        print('A')
 def q8():
     """
     8. Validação de Login: Crie um programa que pede ao usuário um nome 
