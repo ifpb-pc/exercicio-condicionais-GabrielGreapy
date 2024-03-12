@@ -30,10 +30,19 @@ def q3():
     números e uma operação (+, -, *, /) e imprima o resultado dessa operação.
     """
     pass
-    op = str(input('Escolha uma operação'))
-    a = float(input('Escolha um numero:'))
-    b = float(input('Escolha outro numero:'))
-    
+    op = input('Escolha uma operação')
+    a = int(input('Escolha um numero:'))
+    b = int(input('Escolha outro numero:'))
+    match op:
+        case '+':
+            resultado = a + b
+        case '-':
+            resultado = a - b
+        case '*':
+            resultado = a * b
+        case '/':
+            resultado = a / b
+    print(resultado)
 def q4():
     """
     4. Maior de Três Números: Escreva um programa que solicita três números 
