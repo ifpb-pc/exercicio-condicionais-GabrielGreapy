@@ -83,6 +83,9 @@ def q6():
     se é um triângulo equilátero, isósceles ou escaleno.
     """
     pass
+    ladoc = int(input('lado'))
+    ladob = int(input('lado'))
+    ladoc = int(input('lado'))
 
 def q7():
     """
