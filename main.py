@@ -93,15 +93,15 @@ def q7():
     nota = int(input('Digite sua idade'))
     if nota < 49 :
         print('F')
-    if 59 > nota > 50:
+    if 59 >= nota >= 50:
         print('E')
-    if 60 > nota > 69:
+    if 69 >= nota >= 60:
         print('D')
-    if 70 > nota > 79:
+    if 70 >= nota >= 79:
         print('C')
-    if 80 > nota > 89:
+    if 80 >= nota >= 89:
         print('B')
-    if 90 > nota > 100:
+    if 100 >= nota >= 90:
         print('A')
 def q8():
     """
@@ -109,6 +109,16 @@ def q8():
     de usuário e uma senha. Se o nome de usuário for "admin" e a senha for 
     "12345", exiba "Acesso concedido", caso contrário, exiba "Acesso negado".
     """
+    user = input('user')
+    pwd = input('pwd')
+    admin = 'admin'
+    rpwd = '12345'
+    if user == admin:
+        if pwd == rpwd:
+            print('Acesso concedido')
+        else:print('Acesso negado')
+    else: print('Acesso negado')
+
     pass
 
 def q9():
@@ -126,3 +136,10 @@ def q10():
     se um ano fornecido pelo usuário é bissexto ou não.
     """
     pass
+
+    ano = int(input('ano'))
+    anob = ano % 4
+    if  anob == 0:
+        print('bissexto')
+    else:
+        print('não')
