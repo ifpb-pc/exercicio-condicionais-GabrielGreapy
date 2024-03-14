@@ -30,19 +30,20 @@ def q3():
     números e uma operação (+, -, *, /) e imprima o resultado dessa operação.
     """
     pass
-    op = input('Escolha uma operação')
+    
     a = int(input('Escolha um numero:'))
     b = int(input('Escolha outro numero:'))
+    op = input('Escolha uma operação')
     match op:
         case '+':
-            resultado = a + b
+            print(float(a + b))
         case '-':
-            resultado = a - b
+            print(float(a - b))
         case '*':
-            resultado = a * b
+            print(float(a * b))
         case '/':
-            resultado = a / b
-    print(resultado)
+            print(float(a / b))
+    
 def q4():
     """
     4. Maior de Três Números: Escreva um programa que solicita três números 
@@ -136,9 +137,9 @@ def q9():
         print('Abaixo do peso')
     elif 24.9 >= imc >= 18.5 :
         print('Peso normal')
-    elif 29.9 >= imc > 25= :
+    elif 29.9 >= imc >= 25 :
         print('Sobrepeso')
-    elif 34.9 >= 30 :
+    elif 34.9 >= imc >= 30 :
         print('Obesa')
     elif 39.9 >= imc >= 35:
         print('Muito obesa')
