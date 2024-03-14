@@ -129,14 +129,27 @@ def q9():
       Obesa ou Muito obesa.
     """
     pass
-
+    peso = float(input('peso'))
+    altura = float(input('altura'))
+    imc = peso / (altura ** 2)
+    if imc < 18.5 :
+        print('Abaixo do peso')
+    elif 24.9 >= imc >= 18.5 :
+        print('Peso normal')
+    elif 29.9 >= imc > 25= :
+        print('Sobrepeso')
+    elif 34.9 >= 30 :
+        print('Obesa')
+    elif 39.9 >= imc >= 35:
+        print('Muito obesa')
 def q10():
     """
     10. Verificação de Ano Bissexto: Escreva um programa que verifica 
     se um ano fornecido pelo usuário é bissexto ou não.
     """
     pass
-
+    
+   
     ano = int(input('ano'))
     anob = ano % 4
     if  anob == 0:
